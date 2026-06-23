@@ -2,7 +2,7 @@
 
 An interactive Tableau dashboard that explores trends in the film industry using the **TMDB 5000 Movie Dataset** from Kaggle — uncovering how release patterns, audience preferences, and directorial impact have shaped the movie landscape.
 
-[![Tableau Public](https://img.shields.io/badge/Tableau-Public-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/views/Dasbor_TMDB/TMDB5000MoviesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[![Tableau Public](https://img.shields.io/badge/Tableau-Public-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/josh.pardosi/viz/Dasbor_TMDB/TMDB5000MoviesDashboard)
 
 ---
 
@@ -10,7 +10,7 @@ An interactive Tableau dashboard that explores trends in the film industry using
 
 ![TMDB 5000 Movies Dashboard](dashboard.png)
 
-🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/views/Dasbor_TMDB/TMDB5000MoviesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/app/profile/josh.pardosi/viz/Dasbor_TMDB/TMDB5000MoviesDashboard)**
 
 ---
 
