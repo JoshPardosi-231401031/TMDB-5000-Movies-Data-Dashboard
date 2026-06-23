@@ -1,53 +1,84 @@
-# 🎬 TMDB 5000 Movies Data Analysis & Dashboard
+# 🎬 TMDB 5000 Movies Data Dashboard
 
-### 📌 Project Description
+An interactive Tableau dashboard that explores trends in the film industry using the **TMDB 5000 Movie Dataset** from Kaggle — uncovering how release patterns, audience preferences, and directorial impact have shaped the movie landscape.
 
-This is a **beginner-level** data visualization portfolio project built using **Tableau**. Using the [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata), the primary goal was to extract meaningful business insights and design an interactive dashboard that highlights:
-
-1.  **Production Trends:** Movie release volume from the 1920s to 2010s.
-2.  **Genre Preferences:** Average viewer ratings across different genres.
-3.  **Financial Success:** Identifies the top-grossing directors.
+[![Tableau Public](https://img.shields.io/badge/Tableau-Public-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/views/Dasbor_TMDB/TMDB5000MoviesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
-### 📊 Dashboard Preview
+## 📊 Dashboard Preview
 
-![Dashboard TMDB Preview](dashboard.png)
+![TMDB 5000 Movies Dashboard](dashboard.png)
 
----
-
-### 🔗 Explore the Project Live
-
-**[>> Click here to view the Interactive Dashboard on Tableau Public <<](https://public.tableau.com/views/Dasbor_TMDB/TMDB5000MoviesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+🔗 **[View Live Dashboard on Tableau Public](https://public.tableau.com/views/Dasbor_TMDB/TMDB5000MoviesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 ---
 
-### 💡 Key Visualizations
+## 🎯 Project Overview
 
-The dashboard consists of three primary charts designed to answer specific analytical questions:
+The global film industry produces thousands of movies each year, but not all genres perform equally at the box office — and critical acclaim doesn't always translate to revenue. This project analyzes **5,000 movies** to answer three strategic questions:
 
-*   📈 **Movies Released Over Time:** This visualization utilizes a **chronological line chart** to track the evolution of movie production volume. It reveals a dramatic surge in movie releases starting in the 1990s and peaking in the mid-2000s.
-
-*   📊 **Average Ratings by Genre:** A **bar chart** that compares average viewer ratings across genres. It indicates that while action/adventure genres generate higher revenue (implied from the financial success chart), niche genres like **History, War, and Drama** are consistently rated higher by audiences, demonstrating a preference for narrative depth.
-
-*   🏆 **Top-Grossing Directors:** This chart ranks the top 10 directors by their total cumulative **Gross Revenue**. It uses descending sort and **color gradient** formatting to emphasize the highest earners. Industry titans like **James Cameron and Joss Whedon** dominate this view, showcasing their massive commercial success.
+1. **How has movie production volume changed over time?**
+2. **Which genres do audiences actually rate highest — and do those match what earns the most?**
+3. **Which directors consistently generate the highest cumulative box-office revenue?**
 
 ---
 
-### 🛠️ Tools & Techniques
+## 🔍 Key Insights & Findings
 
-This project serves as a showcase of foundational **data manipulation and storytelling** skills:
+### 📈 Movies Released Over Time
+- Movie production saw a **dramatic surge beginning in the 1990s**, coinciding with the rise of independent cinema and digital filmmaking.
+- Production volume **peaked in the mid-2000s**, likely driven by franchise expansions, sequels, and the global expansion of theatrical markets.
+- The trend provides context for understanding how market saturation affects individual movie performance.
 
-*   **Primary Tool:** Tableau Desktop (used for development) / Tableau Public (for deployment).
-*   **Data Cleaning:** Addressing complex, nested JSON-like data structures in the 'Genres' and 'Crew' columns.
-*   **Data Manipulation:**
-    *   **Custom Split:** Extracted clean genre names.
-    *   **Calculated Fields (Regex):** Used Regular Expression functions (`REGEXP_EXTRACT`) to isolate and extract the 'Director' name from lengthy text strings.
-*   **Filtering:** Applied a 'Top 10' filter to focus on impactful insights.
-*   **Visual Design:** Settle axis adjustments, formatting labels (e.g., Hide Field Labels), chronological sorting, and custom color palettes to enhance the data hierarchy.
+### 🎭 Average Ratings by Genre
+- **Action and Adventure** films generate higher box-office revenue, but audience ratings tell a different story.
+- **History, War, and Drama** genres consistently receive **higher average ratings**, suggesting audiences value storytelling depth over spectacle.
+- This insight is valuable for studios balancing commercial viability with audience satisfaction and award potential.
+
+### 🏆 Top-Grossing Directors (Top 10)
+- **James Cameron** and **Joss Whedon** dominate the top of the cumulative gross revenue chart, driven by blockbuster franchises (*Avatar*, *Titanic*, *The Avengers*).
+- A color gradient visualization highlights the revenue gap between the top-tier directors and the rest of the top 10.
+- The concentration of revenue among a handful of directors underscores the franchise-driven nature of modern Hollywood.
 
 ---
 
-### 📂 Dataset
+## 🛠️ Tools & Technologies
 
-The **TMDB 5000 Movie Dataset** is a comprehensive metadata repository of thousands of films, including details on budget, revenue, cast, crew, genres, and audience review scores.
+| Tool | Purpose |
+|------|---------|
+| **Tableau Desktop** | Data cleaning, transformation, and dashboard development |
+| **Tableau Public** | Dashboard publishing and sharing |
+| **TMDB 5000 Movie Dataset (Kaggle)** | Source data — metadata for 5,000 movies |
+
+---
+
+## 🧹 Data Preparation
+
+The raw dataset required significant transformation before visualization:
+
+- **Genre Extraction:** Used Tableau's **Custom Split** function to parse genre names from nested JSON-like strings into individual, filterable genre categories.
+- **Director Extraction:** Applied **REGEXP_EXTRACT** to isolate director names from the complex `crew` JSON column, enabling accurate attribution of revenue to individual directors.
+- **Top N Filtering:** Implemented a **Top 10 filter** to focus the director revenue chart on the most impactful filmmakers, reducing visual noise.
+
+---
+
+## 📁 Repository Structure
+
+```
+TMDB-5000-Movies-Data-Dashboard/
+├── dashboard.png          # Dashboard screenshot
+├── README.md              # Project documentation
+└── ...                    # Tableau workbook and data files
+```
+
+---
+
+## 👤 About the Author
+
+**Josh Peter Pardosi** — *Aspiring Data Analyst*
+
+Computer Science undergraduate at Universitas Sumatera Utara (GPA: 3.68). Passionate about transforming raw data into actionable insights.
+
+- **LinkedIn:** [Josh Peter Pardosi](https://www.linkedin.com/in/josh-peter-pardosi-44ab612aa/)
+- **Email:** itsjoshpeter@gmail.com
